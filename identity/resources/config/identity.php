@@ -11,7 +11,6 @@ return [
     "users" => [
         "subject" => [
             "hosted" => true,
-            'force-create' => true,
         ],
         "claims" => [
             "username" => "username",

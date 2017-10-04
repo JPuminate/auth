@@ -16,12 +16,12 @@ class AuthGatewayException extends \Exception
     /**
      * @var int
      */
-    private $httpStatusCode;
+    private $httpStatus;
 
-    public function __construct($httpStatusCode, $message = "", $code = 0,  Throwable $previous = null)
+    public function __construct($httpStatus, $message = "", $code = 0,  Throwable $previous = null)
     {
         parent::__construct($message, $code, $previous);
-        $this->httpStatusCode = $httpStatusCode;
+        $this->httpStatus = $httpStatus;
     }
 
     public static function expiredToken()
@@ -32,6 +32,10 @@ class AuthGatewayException extends \Exception
     public static function accessDenied($string)
     {
         return new static(401, $string);
+    }
+
+    public function getHttpStatus(){
+        return $this->httpStatus;
     }
 
 }
