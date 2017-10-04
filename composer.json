@@ -1,0 +1,35 @@
+{
+    "name": "jpuminate/auth",
+    "description": "laravel package for checking token signature, work on microservice architecture, when we need to ckeck the token validation without sending the request to the Auth server",
+    "keywords": "auth, token, jwt, microservice, design, auth strategy",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "40Enissay",
+            "email": "yassine.ouachhal@gmail.com"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^5.0",
+        "illuminate/auth": "~5.4",
+        "illuminate/console": "~5.4",
+        "illuminate/container": "~5.4",
+        "illuminate/contracts": "~5.4",
+        "illuminate/database": "~5.4",
+        "illuminate/encryption": "~5.4",
+        "illuminate/http": "~5.4",
+        "illuminate/support": "~5.4"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.9",
+        "phpunit/phpunit": "^6.3",
+        "nesbot/carbon": "^1.22"
+    },
+    "autoload": {
+        "psr-4": {
+            "JPuminate\\Auth\\Identity\\": "identity/src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
