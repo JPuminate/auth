@@ -1,7 +1,7 @@
 {
     "name": "jpuminate/auth",
     "description": "laravel package for checking token signature, work on microservice architecture, when we need to ckeck the token validation without sending the request to the Auth server",
-    "keywords": "auth, token, jwt, microservice, design, auth strategy",
+    "keywords": ["auth", "token", "jwt", "microservices", "design", "auth strategy"],
     "license": "MIT",
     "authors": [
         {
